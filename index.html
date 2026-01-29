@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Satria Zuda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ✅ NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">Satria<span>Dev</span></h2>
+
+        <!-- ✅ Hamburger Button -->
+        <button class="hamburger" id="menu-toggle">☰</button>
+
+        <!-- ✅ Menu -->
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ✅ HERO -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Halo, Saya <span>Muhammad Satria Zuda</span></h1>
+            <h3>Fresh Graduate Web Developer</h3>
+
+            <p>
+                Web Developer dengan pengalaman Laravel, Bootstrap, JavaScript,
+                serta Desktop Development menggunakan Electron JS.
+            </p>
+
+            <a href="#projects" class="btn">Lihat Proyek</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="foto-satria.jpeg" alt="Foto Satria">
+        </div>
+    </header>
+
+
+    <!-- ✅ ABOUT -->
+    <section id="about" class="section">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya Fresh Graduate Teknik Informatika Universitas AKI (Lulus 2025).
+            Fokus pada pengembangan aplikasi web berbasis Laravel serta aplikasi desktop menggunakan Electron JS.
+            Saya juga memiliki pengalaman dalam event organizer kejuaraan olahraga.
+        </p>
+    </section>
+
+
+    <!-- ✅ SKILLS -->
+    <section id="skills" class="section bg">
+        <h2>Keahlian</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">PHP</div>
+            <div class="skill-card">Laravel</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Bootstrap</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">Electron JS</div>
+            <div class="skill-card">Microsoft Office</div>
+        </div>
+    </section>
+
+
+    <!-- ✅ PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Proyek Unggulan</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Sistem Pendaftaran Kejuaraan Beladiri</h3>
+                <p>
+                    Sistem pendaftaran peserta berbasis web dengan fitur CRUD atlet,
+                    kontingen, kelas, dan kategori lomba.
+                </p>
+                <span>Laravel • PHP • Bootstrap • MySQL</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Aplikasi Desktop Scoring Karate</h3>
+                <p>
+                    Aplikasi desktop untuk scoring karate Kumite & Kata dengan input poin
+                    serta penalti realtime.
+                </p>
+                <span>Electron JS • JavaScript</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ✅ EXPERIENCE -->
+    <section id="experience" class="section bg">
+        <h2>Pengalaman Kerja</h2>
+
+        <div class="experience-card">
+            <h3>Event Organizer - EO Himura</h3>
+            <p><b>2024 – Sekarang</b></p>
+            <ul>
+                <li>Mengatur dan mengkoordinasi event kejuaraan olahraga</li>
+                <li>Menangani kebutuhan data serta jaringan event</li>
+                <li>Bekerja dalam tim operasional skala besar</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ✅ CONTACT -->
+    <section id="contact" class="section">
+        <h2>Kontak Saya</h2>
+
+        <div class="contact-box">
+            <p>📍 Kab. Demak, Kec. Mranggen</p>
+            <p>📱 WhatsApp: <a href="https://wa.me/628812725787">0881-2725-787</a></p>
+            <p>✉ Email: <a href="mailto:saputra240303@gmail.com">saputra240303@gmail.com</a></p>
+        </div>
+    </section>
+
+
+    <!-- ✅ FOOTER -->
+    <footer>
+        <p>© 2026 Muhammad Satria Zuda Saputra | Portfolio Web Developer</p>
+    </footer>
+
+
+    <!-- ✅ SCRIPT MENU HP -->
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("nav-menu");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+        // Auto close setelah klik menu
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                menu.classList.remove("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
